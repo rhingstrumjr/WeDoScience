@@ -4,6 +4,12 @@
   margin: 0;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   width: 100%;
 }
@@ -33,14 +39,14 @@ header>div {
 
 .flex-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #14141f;
 }
 
 
-#sign-in {
+.navbar {
   background-color: #14141f;
-  margin: 2px;
+  margin: .2em .75em .2em .75em;
   text-align: center;
   line-height: 35px;
   font-size: 30px;
@@ -51,6 +57,12 @@ header>div {
 
 
 a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+a:visited {
   text-decoration: none;
   color: whitesmoke;
 }
