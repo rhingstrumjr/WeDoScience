@@ -1,3 +1,9 @@
+:root {
+  --main-bg-color: #343454;
+  --alt-bg-color: #14141f;
+  --main-txt-color: whitesmoke;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -32,7 +38,7 @@ header {
 
 header>div {
   font-size: 40px;
-  color: whitesmoke;
+  color: var(--main-txt-color);
   font-family: "Bubblegum Sans", Impact, sans-serif;
 }
 
@@ -40,12 +46,12 @@ header>div {
 .flex-container {
   display: flex;
   justify-content: flex-end;
-  background-color: #14141f;
+  background-color: var(--alt-bg-color);
 }
 
 
 .navbar {
-  background-color: #14141f;
+  background-color: var(--alt-bg-color);
   margin: .2em .75em .2em .75em;
   text-align: center;
   line-height: 35px;
@@ -58,13 +64,13 @@ header>div {
 
 a:link {
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--main-txt-color);
 }
 
 
 a:visited {
   text-decoration: none;
-  color: whitesmoke;
+  color: var(--main-txt-color);
 }
 
 
@@ -76,14 +82,14 @@ a:hover {
 #purpose {
   flex-direction: column;
   align-items: center;
-  background-color: #343454;
+  background-color: var(--main-bg-color);
 }
 
 
 #purpose>p {
   width: 80%;
   margin: 1em;
-  color: whitesmoke;
+  color: var(--main-txt-color);
   font-size: 1.5em;
 }
 
@@ -105,7 +111,7 @@ a:hover {
 
 /* Modal Content */
 .signin-popup {
-  background-color: #14141f;
+  background-color: var(--alt-bg-color);
   margin: auto;
   border: 1px solid #888;
   width: 60%;
@@ -124,7 +130,7 @@ a:hover {
 
 /* The Close Button */
 .close {
-  color: whitesmoke;
+  color: var(--main-txt-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
